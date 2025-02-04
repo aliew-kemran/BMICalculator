@@ -28,6 +28,6 @@ class BMICalculatorTest {
         assertEquals("Übergewicht", bmiCalc1.getBMICategoryName());
 
         BMICalculator bmiCalc2 = new BMICalculator("Tim", "Schmidt", 180, 120.0, 'm');
-        assertEquals("Sehr stark Übergewicht", bmiCalc2.getBMICategoryName());
+        assertEquals("Sehr starkes Übergewicht", bmiCalc2.getBMICategoryName());
     }
 }

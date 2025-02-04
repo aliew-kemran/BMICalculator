@@ -73,11 +73,11 @@ public class BMICalculator {
     public String getBMICategoryName() {
         int category = calculateBMICategory();
         return switch (category) {
-            case -2 -> "Sehr stark Untergewicht";
+            case -2 -> "Sehr starkes Untergewicht";
             case -1 -> "Untergewicht";
             case 0 -> "Normalgewicht";
             case 1 -> "Übergewicht";
-            case 2 -> "Sehr stark Übergewicht";
+            case 2 -> "Sehr starkes Übergewicht";
             default -> "Unbekannt";
         };
     }
