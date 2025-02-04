@@ -1,5 +1,4 @@
 package org.example;
-import static java.lang.Math.round;
 
 public class BMICalculator {
     private final String firstName;
@@ -78,10 +77,15 @@ public class BMICalculator {
             case -1 -> "Untergewicht";
             case 0 -> "Normalgewicht";
             case 1 -> "Übergewicht";
-            case 2 -> "Sehr stark übergewicht";
+            case 2 -> "Sehr stark Übergewicht";
             default -> "Unbekannt";
         };
     }
+
+    private double round(double value) {
+        return Math.round(value * 100.0) / 100.0;
+    }
+
 
 
 }
