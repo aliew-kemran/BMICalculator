@@ -39,6 +39,8 @@ public class BMICalculator {
         return gender;
     }
 
+    //set
+
     public void setBodyHeight(int bodyHeight) {
         this.bodyHeight = bodyHeight;
     }
@@ -69,7 +71,7 @@ public class BMICalculator {
         }
     }
 
-    public String getBMICalculatorName() {
+    public String getBMICategoryName() {
         int category = calculateBMICategory();
         return switch (category) {
             case -2 -> "Sehr stark Untergewicht";
